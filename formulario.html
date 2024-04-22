@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Apostila de HTML e CSS</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Emanuel & Lucas">
+		<meta name="description" content="Página com HTML e CSS">
+		<meta name="keywords" content="HTML, CSS, JS, Design, Web">
+		<link rel="shortcut icon" href="img/icone.png">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body class="fundo">
+		<main class="geral">
+			<h1>Formulário</h1>
+			<p>Utilizamos formulários para a interação do usuário dentro da página web. <br>
+			Exemplo: &lt;form method="post" name="dados" action="envia.php"></p>
+			<form method="post" name="form01" action="#">
+				<fieldset class="pessoais">
+				<legend>Dados Pessoais</legend>
+				<label for="txtnome"><!--como se fosse um parágrafo-->
+				Nome: <span class="obriga">*</span>
+				<input type="text" name="txtnome" size="25" required>
+				</label>
+				<br>
+				<br>
+				<label>Data de Nascimento:<input type="date" name="dtnascimento"></label>
+				<br>
+				<br>
+				<label>E-mail:<input type="email" name="txtmail" size="25" required> &nbsp;&nbsp;
+				Senha:<input type="password" name="txtsenha" maxlength="7" required></label>
+				<br>
+				<br>
+				<label>Endereço:<input type="text" name="txtendereco" size="30"> &nbsp;&nbsp; 
+				N:<input type="number" name="txtnumero" maxlength="6"></label>
+				<br>
+				<br>
+				Cidade:<input type="text" name="txtcidade" maxlength="20"></label>&nbsp;&nbsp;
+				Estado:<select name="selestado">
+						<option value="vazio">Selecione</option>
+						<option value="sc">RS</option>
+						<option value="sc">SC</option>
+						<option value="pr">PR</option>
+					</select></label>
+					<br>
+					<label>Sexo: <input type="radio" name="rdsexo" value="feminino">Feminino &nbsp;
+								<input type="radio" name="rdsexo" value="masculio">Masculino &nbsp;
+								<input type="radio" name="rdsexo" value="outo">Outro 
+					</label>
+					<br>
+					<label> Assunto de interesses:
+					<br>
+					<input type="checkbox" name="ckinteresse" value="tecnologia">Tecnologia
+					<input type="checkbox" name="ckinteresse" value="esporte">Esporte
+					<input type="checkbox" name="ckinteresse" value="saude">Saúde
+					<input type="checkbox" name="ckinteresse" value="outros">Outros
+					</label> </fieldset>
+					<fieldset>
+					<legend>Dados Academicos</legend>
+					<label>Escolaridade:</label>
+					<br>
+					<select name="selescolaridade" size="3" multiple>
+					<option value="fundamental">Fundamental</option>
+					<option value="medio">Médio</option>
+					<option value="tecnico">Técnico</option>
+					<option value="graduacao">Graduação</option>
+					<option value="outra">Outra</option> 
+					</select>
+					<br>
+					
+					Cursos:
+					<br>
+					<textarea name="txtname" rows="8" cols="50" placeholder="Digite os cursos aqui"></textarea>
+					</label></fieldset>
+					
+					<fieldset><legend>Dados Profissionais</legend>
+					<label>Anexe aqui seu currículo:
+					<input type="file" name="filecurriculo"></label></fieldset>
+					
+					<input type="submit" name="enviar" value="Enviar">
+					<input type="reset" name="limpar" value="Limpar">
+					</form>
+					
+	</main>	
+	<p><a href="index.html">Voltar</a></p>
+	</body>
+</html>
