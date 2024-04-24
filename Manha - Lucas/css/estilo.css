@@ -1,0 +1,212 @@
+@charset "utf-8";
+*{
+	font-family:verdana, arial;/*Tipografia da fonte*/
+}
+body{
+	background-color:#d2dae2;/*cor do plano de fundo*/
+}
+.principal{ /*Classe*/
+	text-align:center;
+	text-shadow: 2px 2px 2px white,
+				 3px 3px 2px black;
+	color:#00008B; /*rgb(125,14,36)*/
+	font-family:cursive;
+	font-size:1.5em; /*Corresponde a 36px*/
+}
+#especial{ /*id*/
+	font-style:italic;
+}
+p{
+	text-align:justify;
+	text-indent:20px;
+	text-height: 2;
+}
+
+/*Formatando Links*/
+a:link{/*Antes de clicar*/
+	text-decoration:none;
+	color: black;
+}
+a:visited{/*Após clicado*/
+	color:red;
+}
+a:hover{/*Qdo sobre o link*/
+	letter-spacing: 2px;
+}
+
+/*Formatando fundo com Imagem*/
+.fundo{
+	background-image:url(../img/fundo07.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	background-attachment: fixed;
+}
+
+/*Habilitando o scroll deslizante*/
+html{
+	scroll-behavior:smooth;
+}
+
+/*Formatando a página imagens*/
+.imagesesquerda{
+	float:left;
+}
+.caixaimagem{
+	width:250px;
+	margin:auto;
+}
+.imgcentro{
+	width:100%;
+}
+
+/*Formatando a página parágrafo*/
+.esquerda{
+	text-align:left;
+}
+.direita{
+	text-align: right;
+}
+.centro{
+	text-align:center;
+}
+.justificado{
+	text-align:justify;
+	border: 4px double navy;
+	background-color:rgba(0,0,0,0.3);
+	padding:20px;
+	margin:20px;
+	text-shadow: 1px 1px 1px silver;
+}
+/*Formatando a página fontes.html*/
+/*Topologia*/
+.arial{
+	font-family:arial;
+}
+.verdana{
+	font-family:verdana;
+}
+.courier{
+	font-family:courier new;
+}
+.escolha{
+	font-family:Cooper;
+}
+/*Cor da fonte*/
+.azul{
+	color:blue;
+}
+.vermelho{
+	color:red;
+}
+.verde{
+	color:green;
+}
+.amarelo{
+	color:yellow;
+}
+.escolhida{
+	color:purple;
+}
+/*Tamanho da Fonte*/
+.tamanho{
+	font-size:10pt;
+}
+.tam10px{
+	font-size:10px;
+}
+.tam1em{
+	font-size:1em;
+}
+/*Formatações de Estilos*/
+.negrito{
+	font-weight:bold;
+}
+.italico{
+	font-weight:italic;
+}
+.sombra{
+	text-shadow:-2px -3px 4px purple;
+}
+.versalete{
+	font-variant:small-caps;
+}
+/*Formatando a página backgrounds.html*/
+.fundoespecial{
+	background-image:url(../img/fundo08.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+}
+.conteudo{
+	background-color:rgba(211, 211, 211, 0.2);
+	width:80%;
+	margin:auto;
+	border-radius:30px;
+	margin-top:20px;
+	border:2px solid silver;
+	padding:20px;
+}
+.conteudo p{
+	text-align:justify;
+	font-size:14px;
+}
+.conteudo img{
+	width:200px;
+	float:right;
+	padding:10px;
+	opacity:0.4;
+}
+.conteudo h1, .conteudo h2{
+	font-family:cursive;
+}
+/*Formatando a página formulario.html*/
+.geral{
+	width:80%;
+	margin:auto;
+}
+.geral h1{
+	text-align:center;
+	font-size:25px;
+}
+fieldset{
+	border-radius:20px;
+	border:1px solid rgb(139,139,139);
+}
+legend{
+	font-weight:bold;
+}
+input, select, textarea{
+	border-radius:4px;
+	padding:5px;
+	margin:5px;
+}
+input:focus, select:focus, textarea:focus{
+	background-color:rgb(244,183,205);
+	color:rgb(124,6,59);
+}
+.obriga{
+	color:red;
+}
+/*Formatando a pagina tabelas.html*/
+table{
+	border:2px solid silver;
+	width:100%;
+	border-collapse:collapse;
+}
+th, td{
+	padding:10px;
+	border:1px solid silver;
+}
+th{
+	background-color:#000;
+	color:#fff;
+}
+tr:nth-child(even){/*linhas pares*/
+	background-color:silver;
+}
+tr:nth-child(odd){/*Linhas ímpares*/
+	background-color:rgba(255,255,255,0.5);
+}
+tr:hover{
+	background-color:gray;
+}
